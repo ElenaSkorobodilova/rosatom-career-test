@@ -4,6 +4,8 @@
 # Jenkins job
 <a target="_blank" href="https://jenkins.autotests.cloud/job/homework-286">jenkins.autotests.cloud/job/homework-286</a>
 
+# The project is done with the following technologies:
+Java Gradle IntelliJ IDEA Selenide Selenoid JUnit5 Github Jenkins Allure Report Allure TestOps Telegram Jira
 
 # USAGE examples
 
