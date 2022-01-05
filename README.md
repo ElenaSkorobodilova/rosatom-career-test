@@ -1,8 +1,8 @@
 # Project in Allure TestOps with manual & automated tests
-<a target="_blank" href="https://allure.autotests.cloud/project/804">allure.autotests.cloud/project/804</a> (ask admin@qa.guru for access)
+<a target="_blank" href="https://allure.autotests.cloud/project/804">Сссылка на проект в AllureTestOps</a> (ask admin@qa.guru for access)
 
 # Jenkins job
-<a target="_blank" href="https://jenkins.autotests.cloud/job/homework-286">jenkins.autotests.cloud/job/homework-286</a>
+<a target="_blank" href="https://jenkins.autotests.cloud/job/homework-286">Ссылка на проект в Jenkins</a>
 
 # The project is done with the following technologies:
 Java Gradle IntelliJ IDEA Selenide Selenoid JUnit5 Github Jenkins Allure Report Allure TestOps Telegram Jira
