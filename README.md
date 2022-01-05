@@ -2,7 +2,7 @@
 <a target="_blank" href="https://allure.autotests.cloud/project/%s">allure.autotests.cloud/project/%s</a> (ask admin@qa.guru for access)
 
 # Jenkins job
-<a target="_blank" href="https://jenkins.autotests.cloud/job/%s">jenkins.autotests.cloud/job/%s</a>
+<a target="_blank" href="https://jenkins.autotests.cloud/job/homework-286">jenkins.autotests.cloud/job/%s</a>
 
 
 # USAGE examples
