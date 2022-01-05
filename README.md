@@ -7,6 +7,8 @@
 # The project is done with the following technologies:
 Java Gradle IntelliJ IDEA Selenide Selenoid JUnit5 Github Jenkins Allure Report Allure TestOps Telegram Jira
 
+![This is an image](/icons/AllureTestOps.png)
+
 # USAGE examples
 
 ### For run remote tests need fill remote.properties or to pass value:
