@@ -17,6 +17,7 @@ public class GeneratedTests extends TestBase {
     @DisplayName("Search in https://rosatom-career.ru/")
     void generatedTest() {
         step("Open 'https://rosatom-career.ru/'", () -> {
+            open("https://rosatom-career.ru");
             step("// todo: just add selenium action");
         });
 
