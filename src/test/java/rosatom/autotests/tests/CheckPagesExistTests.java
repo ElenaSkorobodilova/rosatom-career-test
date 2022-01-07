@@ -1,4 +1,4 @@
-package cloud.autotests.tests;
+package rosatom.autotests.tests;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Tag;

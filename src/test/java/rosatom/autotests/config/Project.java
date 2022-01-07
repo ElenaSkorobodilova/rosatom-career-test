@@ -1,4 +1,4 @@
-package cloud.autotests.config;
+package rosatom.autotests.config;
 
 import org.aeonbits.owner.ConfigFactory;
 

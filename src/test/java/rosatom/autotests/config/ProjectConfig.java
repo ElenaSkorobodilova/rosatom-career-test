@@ -1,4 +1,4 @@
-package cloud.autotests.config;
+package rosatom.autotests.config;
 
 import org.aeonbits.owner.Config;
 
@@ -23,4 +23,6 @@ public interface ProjectConfig extends Config {
     String remoteDriverUrl();
     @DefaultValue("true")
     String videoStorage();
+    String login();
+    String password();
 }
