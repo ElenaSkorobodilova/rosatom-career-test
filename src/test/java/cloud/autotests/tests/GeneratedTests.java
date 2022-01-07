@@ -2,6 +2,7 @@ package cloud.autotests.tests;
 
 import cloud.autotests.helpers.DriverUtils;
 import io.qameta.allure.Description;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -18,19 +19,20 @@ public class GeneratedTests extends TestBase {
     void generatedTest() {
         step("Open 'https://rosatom-career.ru/'", () -> {
             open("https://rosatom-career.ru");
-            step("// todo: just add selenium action");
+//            step("// todo: just add selenium action");
+            Assertions.assertEquals(1,1);
         });
 
-        step("Input 'инженер' in search field", () -> {
-            step("// todo: just add selenium action");
-        });
-
-        step("Search vacancy", () -> {
-            step("// todo: just add selenium action");
-        });
-
-        step("Check results", () -> {
-            step("// todo: just add selenium action");
-        });
+//        step("Input 'инженер' in search field", () -> {
+//            step("// todo: just add selenium action");
+//        });
+//
+//        step("Search vacancy", () -> {
+//            step("// todo: just add selenium action");
+//        });
+//
+//        step("Check results", () -> {
+//            step("// todo: just add selenium action");
+//        });
     }
 }
