@@ -8,6 +8,7 @@ import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 import static org.openqa.selenium.By.linkText;
 
+@DisplayName("Тесты на проверку содержимого главной страницы https://rosatom-career.ru/")
 public class CheckMainPageContentTest extends TestBase {
     @BeforeEach
     public void openCheckPage() {
