@@ -6,21 +6,30 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
+import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.Assertions.assertThat;
 
-
+@DisplayName("Поиск на странице https://rosatom-career.ru/")
 public class GeneratedTests extends TestBase {
+    private final String urlForTest = "https://rosatom-career.ru/";
+    private final String searchVacancy = "инженер";
+    private final String issueText = "New Cost Analysis feature";
+
     @Test
     @Tag("UITests")
-    @Description("Soon to be implemented by you (or QA.GURU engineers)")
-    @DisplayName("Search in https://rosatom-career.ru/")
+    @DisplayName("Поиск вакансии 'инженер'")
     void generatedTest() {
-        step("Open 'https://rosatom-career.ru/'", () -> {
-            open("https://rosatom-career.ru");
-//            step("// todo: just add selenium action");
+        step(String.format("Открываем страницу %s",urlForTest), () -> {
+            open(urlForTest);
             Assertions.assertEquals(1,1);
+        });
+
+        step(String.format("ищем вакансию %s",searchVacancy), () -> {
+            $(".header-search-input").click();
+            $(".header-search-input").sendKeys("oracle");
+            $(".header-search-input").submit();
         });
 
 //        step("Input 'инженер' in search field", () -> {

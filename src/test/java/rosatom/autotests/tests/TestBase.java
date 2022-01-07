@@ -14,8 +14,6 @@ import rosatom.autotests.helpers.Attaches;
 
 import static java.lang.String.format;
 
-
-@ExtendWith({AllureJunit5.class})
 public class TestBase {
     @BeforeAll
     static void setup() {
@@ -26,7 +24,7 @@ public class TestBase {
 
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         Configuration.startMaximized = true;
-        Configuration.remote = format("https://%s:%s@%s",login,password,System.getProperty("testUrl"));
+        Configuration.remote = format("https://%s:%s@selenoid.autotests.cloud/wd/hub/",login,password);
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
