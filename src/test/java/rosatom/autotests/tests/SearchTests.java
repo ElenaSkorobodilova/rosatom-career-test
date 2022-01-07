@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 import static org.openqa.selenium.By.linkText;
 
-@DisplayName("Поиск на странице https://rosatom-career.ru/")
+@DisplayName("Поиск на странице rosatom-career.ru")
 public class SearchTests extends TestBase {
     @BeforeEach
     public void openCheckPage() {
