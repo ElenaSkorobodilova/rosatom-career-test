@@ -1,11 +1,8 @@
 package rosatom.autotests.tests;
 
 import org.junit.jupiter.api.*;
-
-import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
-import static org.openqa.selenium.By.linkText;
 
 @DisplayName("Поиск на странице rosatom-career.ru")
 public class SearchTests extends TestBase {
