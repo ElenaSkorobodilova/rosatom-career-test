@@ -4,11 +4,9 @@ import com.codeborne.selenide.Configuration;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import com.codeborne.selenide.logevents.SelenideLogger;
-import io.qameta.allure.junit5.AllureJunit5;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.extension.ExtendWith;
 import rosatom.autotests.config.CredentialConfig;
 import rosatom.autotests.helpers.Attaches;
 
@@ -24,7 +22,7 @@ public class TestBase {
 
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         Configuration.startMaximized = true;
-        Configuration.remote = format("https://%s:%s@selenoid.autotests.cloud/wd/hub/",login,password);
+//        Configuration.remote = format("https://%s:%s@selenoid.autotests.cloud/wd/hub/",login,password);
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
