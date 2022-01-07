@@ -9,7 +9,7 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.extension.ExtendWith;
-import rosatom.autotests.config.ProjectConfig;
+import rosatom.autotests.config.CredentialConfig;
 import rosatom.autotests.helpers.Attaches;
 
 import static java.lang.String.format;
@@ -19,8 +19,8 @@ import static java.lang.String.format;
 public class TestBase {
     @BeforeAll
     static void setup() {
-        ProjectConfig credentials =
-                ConfigFactory.create(ProjectConfig.class);
+        CredentialConfig credentials =
+                ConfigFactory.create(CredentialConfig.class);
         String login = credentials.login();
         String password = credentials.password();
 
