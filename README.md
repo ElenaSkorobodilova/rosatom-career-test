@@ -43,9 +43,10 @@ Java Gradle IntelliJ IDEA Selenide Selenoid JUnit5 Jenkins Allure Report Allure 
 
 ### Пример отображения результатов запуска автотестов в отчётах Allure
 ![This is an image](/images/resultstrend.png)
+### Статистика запуска автотестов выполняется нарастающим итогом
 ![This is an image](/images/successtests.png)
 
-### Пример отображения результатов выполнения по каждому тесту
+### Пример отображения результатов выполнения шагов по каждому тесту
 ![This is an image](/images/passed.png)
 
 ## Локальный запуск автотестов
