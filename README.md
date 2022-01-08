@@ -1,5 +1,5 @@
 # Проект по тестированию главной страницы сайта "Росатом. Единый карьерный портал"
-<a target="_blank" href="https://rosatom-career.ru/">Ссылка на единый портал</a>
+> <a target="_blank" href="https://rosatom-career.ru/">Ссылка на единый портал</a>
 
 ![This is an image](/images/rosatom-career.ru.jpeg)
 
