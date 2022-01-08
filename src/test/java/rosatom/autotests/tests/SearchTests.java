@@ -22,8 +22,7 @@ public class SearchTests extends TestBase {
     @DisplayName("Поиск конкретной вакансии")
     void vacancySearchTest() {
         step(String.format("Вводим в строке поиска вакансию '%s'", searchVacancy), () -> {
-            $("swiper-wrapper").scrollIntoView(true);
-            $("input.chakra-input.css-nwb3dv").click();
+            $x("input.chakra-input.css-nwb3dv").scrollIntoView(true).click();
             $("input.chakra-input.css-nwb3dv").sendKeys(searchVacancy);
             $("button.chakra-button.css-3diha").click();
         });
