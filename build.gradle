@@ -44,6 +44,7 @@ tasks.withType(JavaCompile) {
 
 tasks.withType(Test) {
     systemProperties(System.getProperties())
+    systemProperty("testUrl", System.getProperty("testUrl", ""))
     useJUnitPlatform()
 
     if (System.getProperty("threads") != null) {
@@ -64,9 +65,14 @@ tasks.withType(Test) {
         }
     }
 }
-
-task demowebshop(type: Test) {
+task ui_tests(type: Test) {
     useJUnitPlatform {
-        includeTags 'demowebshop'
+        includeTags "UITests"
+    }
+}
+
+task api_tests(type: Test) {
+    useJUnitPlatform {
+        includeTags "ApiTests"
     }
 }
