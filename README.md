@@ -1,10 +1,13 @@
-# Project in Allure TestOps with manual & automated tests
-<a target="_blank" href="https://allure.autotests.cloud/project/804">Сссылка на проект в AllureTestOps</a> (ask admin@qa.guru for access)
+# Проект по тестированию главной страницы сайта "Росатом. Единый карьерный портал"
+<a target="_blank" href="https://rosatom-career.ru/">Ссылка на единый портал</a>
 
-# Jenkins job
-<a target="_blank" href="https://jenkins.autotests.cloud/job/09-ElenaSeversk-unit13">Ссылка на проект в Jenkins</a>
+# Проект в Allure TestOps с тестовыми планами ручного и автотестирования и сводными результатами прогонов тестов
+<a target="_blank" href="https://allure.autotests.cloud/project/804">Сссылка на проект в AllureTestOps</a> (запрос доступа admin@qa.guru)
 
-# The project is done with the following technologies:
+# Сборка и запуск автотестов выполняются на сервере Jenkins
+<a target="_blank" href="http://185.251.90.229:8080/job/RosatomCareerSiteAutoTests/">Ссылка на проект в Jenkins</a> (логин: User, пароль: 1)
+
+# Проект реализован с использованием:
 Java Gradle IntelliJ IDEA Selenide Selenoid JUnit5 Github Jenkins Allure Report Allure TestOps Telegram Jira
 
 ![This is an image](/icons/AllureTestOps.png)
