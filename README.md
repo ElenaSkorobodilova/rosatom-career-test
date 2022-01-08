@@ -23,7 +23,7 @@ Java Gradle IntelliJ IDEA Selenide Selenoid JUnit5 Jenkins Allure Report Allure 
 ## Запуск автотестов выполняется на сервере Jenkins
 <a target="_blank" href="http://185.251.90.229:8080/job/RosatomCareerSiteAutoTests/">Ссылка на проект в Jenkins</a> (логин: User, пароль: 1)
 
-### Используемые параметры
+### Параметры
 
 * login (default user1)
 * password (default 1234)
@@ -79,9 +79,13 @@ allure serve build/allure-results
 
 ## Результаты выполнения тестов и информация о выявленных дефектах интегрированы с Atlassian Jira
 <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-286">Сссылка на задачу в Jira</a> (запрос доступа admin@qa.guru)
-![This is an image](/images/jira.png)
 
+Задачи на выявленные дефекты оформлены как подзадачи к данной. Связаны с соответствующими дефектами в Allure TestOps.
 
+![This is an image](/images/jira2.png)
+
+## Настроено автоматическое оповещение о результатах сборки Jenkins в Telegram-бот
+![This is an image](/images/bot.png)
 
 
 :heart: <a target="_blank" href="https://qa.guru">qa.guru</a><br/>
