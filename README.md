@@ -1,6 +1,8 @@
 # Проект по тестированию главной страницы сайта "Росатом. Единый карьерный портал"
 <a target="_blank" href="https://rosatom-career.ru/">Ссылка на единый портал</a>
 
+![This is an image](/images/rosatom-career.ru.jpeg)
+
 ## Проект в Allure TestOps с тестовыми планами ручного и автотестирования. Cводные результаты прогонов тестов
 <a target="_blank" href="https://allure.autotests.cloud/project/804">Сссылка на проект в AllureTestOps</a> (запрос доступа admin@qa.guru)
 
