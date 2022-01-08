@@ -41,11 +41,15 @@ Java Gradle IntelliJ IDEA Selenide Selenoid JUnit5 Jenkins Allure Report Allure 
 
 ![This is an image](/images/jenkins2a.png)
 
-### Пример отображения результатов запуска автотестов в отчёте Allure
+### Пример отображения результатов запуска автотестов в отчётах Allure
 ![This is an image](/images/resultstrend.png)
 ![This is an image](/images/successtests.png)
 
-### Пример командной строки для локального запуска автотестов:
+### Пример отображения результатов выполнения по каждому тесту
+![This is an image](/images/passed.png)
+
+## Локальный запуск автотестов
+### Пример командной строки:
 ```bash
 gradle clean ui_tests -DtestUrl=http://65.108.161.82:4444/wd/hub
 ```
@@ -55,15 +59,18 @@ gradle clean ui_tests -DtestUrl=http://65.108.161.82:4444/wd/hub
 allure serve build/allure-results
 ```
 
-## Проект в Allure TestOps с тестовыми планами ручного и автотестирования. Cводные результаты прогонов тестов
+## Проект в Allure TestOps
 <a target="_blank" href="https://allure.autotests.cloud/project/804">Сссылка на проект в AllureTestOps</a> (запрос доступа admin@qa.guru)
 
-### Лаунчеры для запусков
+### Пример результатов запуска Launchers в Allure TestOps
 ![This is an image](/images/launchers.png)
+### Пример сводного отчёта
 ![This is an image](/images/testopsboard.png)
 
 ## По результатам ручного тестирования выявлены дефекты, зафиксированные в соответствующих задачах AllureTestOps
+### Тест план выполнения ручного тестирования
 ![This is an image](/images/testplan2.png)
+### Выявленные дефекты
 ![This is an image](/images/failedresult.png)
 ![This is an image](/images/testops2.png)
 ![This is an image](/images/defects.png)
