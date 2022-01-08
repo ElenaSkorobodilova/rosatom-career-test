@@ -23,6 +23,7 @@ public class TestBase {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         Configuration.startMaximized = true;
         //Configuration.remote = format("https://%s:%s@%s",login,password,System.getProperty("testUrl"));
+        Configuration.remote = "http://65.108.161.82:4444/wd/hub";
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
