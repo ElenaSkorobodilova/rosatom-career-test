@@ -41,6 +41,10 @@ Java Gradle IntelliJ IDEA Selenide Selenoid JUnit5 Jenkins Allure Report Allure 
 
 ![This is an image](/images/jenkins2a.png)
 
+### Пример отображения результатов запуска автотестов в отчёте Allure
+![This is an image](/images/resultstrend.png)
+![This is an image](/images/successtests.png)
+
 ### Пример командной строки для локального запуска автотестов:
 ```bash
 gradle clean ui_tests -DtestUrl=http://65.108.161.82:4444/wd/hub
@@ -51,14 +55,10 @@ gradle clean ui_tests -DtestUrl=http://65.108.161.82:4444/wd/hub
 allure serve build/allure-results
 ```
 
-### Сводные отчёты по тестированию и тест план ручного тестирования в проекте Allure TestOps
-<a target="_blank" href="https://allure.autotests.cloud/project/804">Сссылка на проект в AllureTestOps</a> (запрос доступа admin@qa.guru)
-
-
-
 ## Проект в Allure TestOps с тестовыми планами ручного и автотестирования. Cводные результаты прогонов тестов
 <a target="_blank" href="https://allure.autotests.cloud/project/804">Сссылка на проект в AllureTestOps</a> (запрос доступа admin@qa.guru)
 
+### Лаунчеры для запусков
 ![This is an image](/images/launchers.png)
 ![This is an image](/images/testopsboard.png)
 
