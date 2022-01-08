@@ -1,14 +1,10 @@
 package rosatom.autotests.tests;
 
-import com.codeborne.selenide.SelenideElement;
 import org.junit.jupiter.api.*;
-import org.openqa.selenium.By;
-
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 import static org.openqa.selenium.By.linkText;
-import static org.openqa.selenium.By.xpath;
 
 @DisplayName("Тесты на проверку содержимого главной страницы сайта rosatom-career.ru")
 public class CheckMainPageContentTest extends TestBase {
@@ -16,7 +12,6 @@ public class CheckMainPageContentTest extends TestBase {
     public void openCheckPage() {
         step(String.format("Открываем страницу %s", urlForTest), () -> {
             open(urlForTest);
-            Assertions.assertEquals(1, 1);
         });
     }
 

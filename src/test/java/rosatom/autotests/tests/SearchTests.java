@@ -10,7 +10,6 @@ public class SearchTests extends TestBase {
     public void openCheckPage() {
         step(String.format("Открываем страницу %s", urlForTest), () -> {
             open(urlForTest);
-            Assertions.assertEquals(1, 1);
         });
     }
 
