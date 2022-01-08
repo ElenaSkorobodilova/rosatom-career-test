@@ -70,9 +70,11 @@ allure serve build/allure-results
 ## По результатам ручного тестирования выявлены дефекты, зафиксированные в соответствующих задачах AllureTestOps
 ### Тест план выполнения ручного тестирования
 ![This is an image](/images/testplan2.png)
-### Выявленные дефекты
+### Сводные результаты ручного тестирования
 ![This is an image](/images/failedresult.png)
+### Пример описания дефекта в Allure TestOps
 ![This is an image](/images/testops2.png)
+### Список выявленных дефектов, открытых как задачи в Allure TestOps
 ![This is an image](/images/defects.png)
 
 
