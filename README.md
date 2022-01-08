@@ -21,7 +21,7 @@ Java Gradle IntelliJ IDEA Selenide Selenoid JUnit5 Jenkins Allure Report Allure 
 
 
 ## Запуск автотестов выполняется на сервере Jenkins
-<a target="_blank" href="http://185.251.90.229:8080/job/RosatomCareerSiteAutoTests/">Ссылка на проект в Jenkins</a> (логин: User, пароль: 1)
+> <a target="_blank" href="http://185.251.90.229:8080/job/RosatomCareerSiteAutoTests/">Ссылка на проект в Jenkins</a> (логин: User, пароль: 1)
 
 ### Параметры
 
@@ -61,7 +61,7 @@ allure serve build/allure-results
 ```
 
 ## Проект в Allure TestOps
-<a target="_blank" href="https://allure.autotests.cloud/project/804">Сссылка на проект в AllureTestOps</a> (запрос доступа admin@qa.guru)
+> <a target="_blank" href="https://allure.autotests.cloud/project/804">Сссылка на проект в AllureTestOps</a> (запрос доступа admin@qa.guru)
 
 ### Пример результатов запуска Launchers в Allure TestOps
 ![This is an image](/images/launchers.png)
@@ -79,9 +79,9 @@ allure serve build/allure-results
 ![This is an image](/images/defects.png)
 
 ## Результаты выполнения тестов и информация о выявленных дефектах интегрированы с Atlassian Jira
-<a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-286">Сссылка на задачу в Jira</a> (запрос доступа admin@qa.guru)
+> <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-286">Ссылка на задачу в Jira</a> (запрос доступа admin@qa.guru)
 
-Задачи на выявленные дефекты оформлены как подзадачи к данной. Связаны с соответствующими дефектами в Allure TestOps.
+Задачи на выявленные дефекты оформлены как подзадачи к данной. Связаны с соответствующими дефектами в Allure TestOps
 
 ![This is an image](/images/jira2.png)
 
