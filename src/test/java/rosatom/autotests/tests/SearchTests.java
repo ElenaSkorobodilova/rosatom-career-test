@@ -1,5 +1,6 @@
 package rosatom.autotests.tests;
 
+import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.*;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
@@ -22,6 +23,7 @@ public class SearchTests extends TestBase {
     @DisplayName("Поиск конкретной вакансии")
     void vacancySearchTest() {
         step(String.format("Вводим в строке поиска вакансию '%s'", searchVacancy), () -> {
+            $("div.css-0").scrollIntoView(true);
             $("div.chakra-input__group.css-4302v8").click();
             $("input.chakra-input.css-nwb3dv").click();
             $("input.chakra-input.css-nwb3dv").sendKeys(searchVacancy);
