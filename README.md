@@ -1,18 +1,18 @@
 # Проект по тестированию главной страницы сайта "Росатом. Единый карьерный портал"
 <a target="_blank" href="https://rosatom-career.ru/">Ссылка на единый портал</a>
 
-# Проект в Allure TestOps с тестовыми планами ручного и автотестирования и сводными результатами прогонов тестов
+## Проект в Allure TestOps с тестовыми планами ручного и автотестирования. Cводные результаты прогонов тестов
 <a target="_blank" href="https://allure.autotests.cloud/project/804">Сссылка на проект в AllureTestOps</a> (запрос доступа admin@qa.guru)
 
-# Сборка и запуск автотестов выполняются на сервере Jenkins
+## Сборка и запуск автотестов выполняются на сервере Jenkins
 <a target="_blank" href="http://185.251.90.229:8080/job/RosatomCareerSiteAutoTests/">Ссылка на проект в Jenkins</a> (логин: User, пароль: 1)
 
-# Проект реализован с использованием:
+## Проект реализован с использованием:
 Java Gradle IntelliJ IDEA Selenide Selenoid JUnit5 Github Jenkins Allure Report Allure TestOps Telegram Jira
 
 ![This is an image](/icons/AllureTestOps.png)
 
-# USAGE examples
+## USAGE examples
 
 ### For run remote tests need fill remote.properties or to pass value:
 
