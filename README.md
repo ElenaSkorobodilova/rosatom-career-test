@@ -23,7 +23,7 @@ Java Gradle IntelliJ IDEA Selenide Selenoid JUnit5 Jenkins Allure Report Allure 
 ## Запуск автотестов выполняется на сервере Jenkins
 > <a target="_blank" href="http://185.251.90.229:8080/job/RosatomCareerSiteAutoTests/">Ссылка на проект в Jenkins</a> (логин: User, пароль: 1)
 
-### Параметры
+### Параметры сборки
 
 * login (default user1)
 * password (default 1234)
