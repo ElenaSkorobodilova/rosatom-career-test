@@ -50,7 +50,7 @@ Java Gradle IntelliJ IDEA Selenide Selenoid JUnit5 Jenkins Allure Report Allure 
 ![This is an image](/images/passed.png)
 
 ## Локальный запуск автотестов
-### Пример командной строки:
+Пример командной строки:
 ```bash
 gradle clean ui_tests -DtestUrl=http://65.108.161.82:4444/wd/hub
 ```
