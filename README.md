@@ -41,14 +41,6 @@ Java Gradle IntelliJ IDEA Selenide Selenoid JUnit5 Jenkins Allure Report Allure 
 
 ![This is an image](/images/jenkins2a.png)
 
-### Пример отображения результатов запуска автотестов в отчётах Allure
-![This is an image](/images/resultstrend.png)
-### Статистика запуска автотестов нарастающим итогом
-![This is an image](/images/successtests.png)
-
-### Пример отображения результатов выполнения шагов по каждому тесту
-![This is an image](/images/passed.png)
-
 ## Локальный запуск автотестов
 Пример командной строки:
 ```bash
@@ -62,6 +54,15 @@ allure serve build/allure-results
 
 ## Проект в Allure TestOps
 > <a target="_blank" href="https://allure.autotests.cloud/project/804">Сссылка на проект в AllureTestOps</a> (запрос доступа admin@qa.guru)
+
+### Пример отображения результатов запуска автотестов в отчётах Allure
+![This is an image](/images/resultstrend.png)
+### Статистика запуска автотестов нарастающим итогом
+![This is an image](/images/successtests.png)
+
+### Пример отображения результатов выполнения шагов по каждому тесту
+![This is an image](/images/passed.png)
+
 
 ### Пример результатов запуска Launchers в Allure TestOps
 ![This is an image](/images/launchers.png)
