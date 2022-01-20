@@ -1,5 +1,5 @@
 # Проект по тестированию главной страницы сайта "Росатом. Единый карьерный портал"
-<a target="_blank" href="https://rosatom-career.ru/">Ссылка на единый портал</a>
+> <a target="_blank" href="https://rosatom-career.ru/">Ссылка на единый портал</a>
 
 ![This is an image](/images/rosatom-career.ru.jpeg)
 
@@ -21,9 +21,9 @@ Java Gradle IntelliJ IDEA Selenide Selenoid JUnit5 Jenkins Allure Report Allure 
 
 
 ## Запуск автотестов выполняется на сервере Jenkins
-<a target="_blank" href="http://185.251.90.229:8080/job/RosatomCareerSiteAutoTests/">Ссылка на проект в Jenkins</a> (логин: User, пароль: 1)
+> <a target="_blank" href="http://185.251.90.229:8080/job/RosatomCareerSiteAutoTests/">Ссылка на проект в Jenkins</a> (логин: User, пароль: 1)
 
-### Используемые параметры
+### Параметры
 
 * login (default user1)
 * password (default 1234)
@@ -43,9 +43,10 @@ Java Gradle IntelliJ IDEA Selenide Selenoid JUnit5 Jenkins Allure Report Allure 
 
 ### Пример отображения результатов запуска автотестов в отчётах Allure
 ![This is an image](/images/resultstrend.png)
+### Статистика запуска автотестов выполняется нарастающим итогом
 ![This is an image](/images/successtests.png)
 
-### Пример отображения результатов выполнения по каждому тесту
+### Пример отображения результатов выполнения шагов по каждому тесту
 ![This is an image](/images/passed.png)
 
 ## Локальный запуск автотестов
@@ -60,7 +61,7 @@ allure serve build/allure-results
 ```
 
 ## Проект в Allure TestOps
-<a target="_blank" href="https://allure.autotests.cloud/project/804">Сссылка на проект в AllureTestOps</a> (запрос доступа admin@qa.guru)
+> <a target="_blank" href="https://allure.autotests.cloud/project/804">Сссылка на проект в AllureTestOps</a> (запрос доступа admin@qa.guru)
 
 ### Пример результатов запуска Launchers в Allure TestOps
 ![This is an image](/images/launchers.png)
@@ -78,10 +79,14 @@ allure serve build/allure-results
 ![This is an image](/images/defects.png)
 
 ## Результаты выполнения тестов и информация о выявленных дефектах интегрированы с Atlassian Jira
-<a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-286">Сссылка на задачу в Jira</a> (запрос доступа admin@qa.guru)
-![This is an image](/images/jira.png)
+> <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-286">Ссылка на задачу в Jira</a> (запрос доступа admin@qa.guru)
 
+Задачи на выявленные дефекты оформлены как подзадачи к данной. Связаны с соответствующими дефектами в Allure TestOps
 
+![This is an image](/images/jira2.png)
+
+## Настроено автоматическое оповещение о результатах сборки Jenkins в Telegram-бот
+![This is an image](/images/bot.png)
 
 
 :heart: <a target="_blank" href="https://qa.guru">qa.guru</a><br/>
