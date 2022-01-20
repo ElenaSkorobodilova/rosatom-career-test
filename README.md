@@ -21,7 +21,7 @@ Java Gradle IntelliJ IDEA Selenide Selenoid JUnit5 Jenkins Allure Report Allure 
 
 
 ## Запуск автотестов выполняется на сервере Jenkins
-> <a target="_blank" href="http://185.251.90.229:8080/job/RosatomCareerSiteAutoTests/">Ссылка на проект в Jenkins</a> (логин: User, пароль: 1)
+> <a target="_blank" href="https://jenkins.autotests.cloud/job/09-ElenaSeversk-unit13/">Ссылка на проект в Jenkins</a>
 
 ### Параметры сборки
 
@@ -30,7 +30,7 @@ Java Gradle IntelliJ IDEA Selenide Selenoid JUnit5 Jenkins Allure Report Allure 
 * test_group (default ui_tests). Параметр определяет группу тестов для запуска.
 
 ### Для запуска автотестов в Jenkins
-#### 1. Открыть <a target="_blank" href="http://185.251.90.229:8080/job/RosatomCareerSiteAutoTests/">проект</a>
+#### 1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/09-ElenaSeversk-unit13/">проект</a>
 
 ![This is an image](/images/jenkins1.png)
 
@@ -52,7 +52,7 @@ Java Gradle IntelliJ IDEA Selenide Selenoid JUnit5 Jenkins Allure Report Allure 
 ## Локальный запуск автотестов
 Пример командной строки:
 ```bash
-gradle clean ui_tests -DtestUrl=http://65.108.161.82:4444/wd/hub
+gradle clean ui_tests -Dlogin=user1 -Dpassword=1234 -DtestUrl=selenoid.autotests.cloud/wd/hub/
 ```
 
 Получение отчёта:
