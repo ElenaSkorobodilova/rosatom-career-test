@@ -82,7 +82,7 @@ allure serve build/allure-results
 ### Пример описания дефекта в Allure TestOps
 ![This is an image](/images/testops2.png)
 ### Список выявленных дефектов, открытых как задачи в Allure TestOps
-![This is an image](/images/defects.png)
+![This is an image](./images/defects.png)
 
 # Результаты выполнения тестов и информация о выявленных дефектах интегрированы с Atlassian Jira
 > <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-286">Ссылка на задачу в Jira</a> (запрос доступа admin@qa.guru)
