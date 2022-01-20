@@ -52,17 +52,25 @@ gradle clean ui_tests -Dlogin=user1 -Dpassword=1234 -DtestUrl=selenoid.autotests
 allure serve build/allure-results
 ```
 
-# Проект в Allure TestOps
+# Полная статистика по прохождению тестпланов, отчёты и приложения к ним хранятся в Allure TestOps
 > <a target="_blank" href="https://allure.autotests.cloud/project/804">Сссылка на проект в AllureTestOps</a> (запрос доступа admin@qa.guru)
 
-### Пример отображения результатов запуска автотестов в отчётах Allure
-![This is an image](/images/resultstrend.png)
-### Статистика запуска автотестов нарастающим итогом
-![This is an image](/images/successtests.png)
+### Тест-планы проекта
+![This is an image](/images/testplans.png)
+### Кейсы тест-плана выполнения ручного тестирования
+![This is an image](/images/manual.png)
+### Кейсы тест-плана выполнения автотестирования
+![This is an image](/images/auto.png)
+### Общий список всех кейсов, имеющихся в системе (без разделения по тест-планам и виду выполнения тестирования)
+![This is an image](/images/testcases.png)
+### Пример dashboard с общими результатами тестирования
+![This is an image](/images/dashboard_all.png)
+### В том числе сводная статистика запусков
+![This is an image](/images/dashboard_all2.png)
 
-### Пример отображения результатов выполнения шагов по каждому тесту
-![This is an image](/images/passed.png)
-
+### Пример отчёта выполнения одного из автотестов
+![This is an image](/images/onecasereport.png)
+#### Для просмотра доступны скриншоты и исходный код страницы, лог консоли браузера и видеозапись выполнения теста.
 
 ### Пример результатов запуска Launchers в Allure TestOps
 ![This is an image](/images/launchers.png)
