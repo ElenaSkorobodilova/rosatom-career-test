@@ -20,7 +20,7 @@ Java Gradle IntelliJ IDEA Selenide Selenoid JUnit5 Jenkins Allure Report Allure 
 ![This is an image](/icons/Java.png)![This is an image](/icons/Gradle.png)![This is an image](/icons/Intelij_IDEA.png)![This is an image](/icons/Selenide.png)![This is an image](/icons/Selenoid.png)![This is an image](/icons/JUnit5.png)![This is an image](/icons/Jenkins.png)![This is an image](/icons/Allure_Report.png)![This is an image](/icons/AllureTestOps.png)![This is an image](/icons/Telegram.png)![This is an image](/icons/Jira.png)
 
 
-## Запуск автотестов выполняется на сервере Jenkins
+# Запуск автотестов выполняется на сервере Jenkins
 > <a target="_blank" href="https://jenkins.autotests.cloud/job/09-ElenaSeversk-unit13/">Ссылка на проект в Jenkins</a>
 
 ### Параметры сборки
@@ -52,7 +52,7 @@ gradle clean ui_tests -Dlogin=user1 -Dpassword=1234 -DtestUrl=selenoid.autotests
 allure serve build/allure-results
 ```
 
-## Проект в Allure TestOps
+# Проект в Allure TestOps
 > <a target="_blank" href="https://allure.autotests.cloud/project/804">Сссылка на проект в AllureTestOps</a> (запрос доступа admin@qa.guru)
 
 ### Пример отображения результатов запуска автотестов в отчётах Allure
@@ -79,14 +79,14 @@ allure serve build/allure-results
 ### Список выявленных дефектов, открытых как задачи в Allure TestOps
 ![This is an image](/images/defects.png)
 
-## Результаты выполнения тестов и информация о выявленных дефектах интегрированы с Atlassian Jira
+# Результаты выполнения тестов и информация о выявленных дефектах интегрированы с Atlassian Jira
 > <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-286">Ссылка на задачу в Jira</a> (запрос доступа admin@qa.guru)
 
 Задачи на выявленные дефекты оформлены как подзадачи к данной. Связаны с соответствующими дефектами в Allure TestOps
 
 ![This is an image](/images/jira2.png)
 
-## Настроено автоматическое оповещение о результатах сборки Jenkins в Telegram-бот
+# Настроено автоматическое оповещение о результатах сборки Jenkins в Telegram-бот
 ![This is an image](/images/bot.png)
 
 
