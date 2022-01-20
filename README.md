@@ -88,7 +88,7 @@ allure serve build/allure-results
 
 Задачи на выявленные дефекты оформлены как подзадачи к данной. Связаны с соответствующими дефектами в Allure TestOps
 
-![This is an image](/images/jira2.png)
+![This is an image](/images/jira_n.png)
 
 # Настроено автоматическое оповещение о результатах сборки Jenkins в Telegram-бот
 ![This is an image](/images/bot.png)
