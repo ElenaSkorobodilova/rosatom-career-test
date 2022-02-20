@@ -2,6 +2,7 @@ package rosatom.autotests.tests;
 
 import com.codeborne.selenide.Configuration;
 import org.aeonbits.owner.ConfigFactory;
+import org.junit.jupiter.api.AfterAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
@@ -11,6 +12,7 @@ import rosatom.autotests.config.CredentialConfig;
 import rosatom.autotests.helpers.Attaches;
 import rosatom.autotests.pages.MainPage;
 
+import static com.codeborne.selenide.Configuration.browser;
 import static java.lang.String.format;
 
 public class TestBase {
@@ -40,6 +42,11 @@ public class TestBase {
         Attaches.pageSource();
         Attaches.browserConsoleLogs();
         Attaches.addVideo();
+    }
+
+    @AfterAll
+    public void closeAll() {
+        testPage.closePage();
     }
 
 }

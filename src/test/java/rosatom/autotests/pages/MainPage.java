@@ -31,6 +31,10 @@ public class MainPage {
         return this;
     }
 
+    public void closePage() {
+        closePage();
+    }
+
     public SelenideElement selectElementByName(String elemName) {
         return $(elemName);
     }
