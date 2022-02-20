@@ -1,7 +1,6 @@
 package rosatom.autotests.tests;
 
 import org.junit.jupiter.api.*;
-import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
 @DisplayName("Поиск на странице rosatom-career.ru")
