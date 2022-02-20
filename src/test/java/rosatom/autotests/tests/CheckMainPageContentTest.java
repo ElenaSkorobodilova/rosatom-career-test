@@ -1,21 +1,17 @@
 package rosatom.autotests.tests;
 
 import org.junit.jupiter.api.*;
-import static com.codeborne.selenide.Selectors.*;
-import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
-import static org.openqa.selenium.By.linkText;
 
 @DisplayName("Тесты на проверку содержимого главной страницы сайта rosatom-career.ru")
 public class CheckMainPageContentTest extends TestBase {
     @BeforeEach
     public void openCheckPage() {
-        step(String.format("Открываем страницу %s", urlForTest), () -> {
-            open(urlForTest);
+        step(String.format("Открываем страницу %s", testPage.gerUrl()), () -> {
+            testPage.openPage();
         });
     }
 
-    private final String urlForTest = "https://rosatom-career.ru/";
     private final String youngText = "Молодым специалистам";
     private final String headerText = "Вакансии\nМолодым специалистам\nНаправления бизнеса\nВойти";
     private final String mainText = "Всё начинается \n с атома, а Росатом \n начинается с людей";
@@ -28,12 +24,12 @@ public class CheckMainPageContentTest extends TestBase {
     @DisplayName("Проверка содержимого заголовков в верхнем меню главной страницы")
     void menuItemTest() {
         step("Проверяем, что на странице есть заданный header", () -> {
-            Assertions.assertTrue($("header").exists(),
+            Assertions.assertTrue(testPage.selectElementByName("header").exists(),
                     "Ошибка: на странице отсутствует ожидаемый header");
         });
 
         step("Проверяем, что header страницы содержит необходимые подзаголовки", () -> {
-            Assertions.assertTrue(headerText.equals($("div.css-9bz79c").getText()),
+            Assertions.assertTrue(headerText.equals(testPage.getHeaderSubs().getText()),
                     "Ошибка: в header нет ожидаемых пунктов меню");
         });
     }
@@ -43,15 +39,15 @@ public class CheckMainPageContentTest extends TestBase {
     @DisplayName("Проверка, что заданный пункт меню содержит подменю")
     void submenuItemTest() {
         step(String.format("Проверяем, что у меню '%s' есть подменю", youngText), () -> {
-            $(byText(youngText)).click();
+            testPage.selectElementByText(youngText).click();
 
-            Assertions.assertTrue($(linkText(subMenu1)).exists(),
+            Assertions.assertTrue(testPage.selectElementByLinkText(subMenu1).exists(),
                     String.format("Ошибка: отсутствует пункт подменю '%s'", subMenu1));
 
-            Assertions.assertTrue($(linkText(subMenu2)).exists(),
+            Assertions.assertTrue(testPage.selectElementByLinkText(subMenu2).exists(),
                     String.format("Ошибка: отсутствует пункт подменю '%s'", subMenu2));
 
-            Assertions.assertTrue($(linkText(subMenu3)).exists(),
+            Assertions.assertTrue(testPage.selectElementByLinkText(subMenu3).exists(),
                     String.format("Ошибка: отсутствует пункт подменю '%s'", subMenu3));
         });
     }
@@ -61,14 +57,14 @@ public class CheckMainPageContentTest extends TestBase {
     @DisplayName("Проверка наличия блока подписки на соцсети в подвале страницы")
     void selectionTextTest() {
         step("Проверяем, что на главной странице есть footer", () -> {
-            Assertions.assertTrue($("footer").exists(),
+            Assertions.assertTrue(testPage.selectElementByName("footer").exists(),
                     "Ошибка: footer не найден");
         });
 
-        $("footer").scrollIntoView(true);
+        testPage.selectElementByName("footer").scrollIntoView(true);
 
         step("Проверяем, что в нём есть раздел с подпиской на соцсети", () -> {
-            Assertions.assertTrue($(byText("Подписывайтесь на наши соцсети:")).exists(),
+            Assertions.assertTrue(testPage.selectElementByText("Подписывайтесь на наши соцсети:").exists(),
                     "Ошибка: раздел ссылок на соцсети отсутствует или не имеет заголовка");
         });
     }
@@ -79,7 +75,7 @@ public class CheckMainPageContentTest extends TestBase {
     @DisplayName("Проверка наличия имиджевого текста на первой странице сайта")
     void mainTextTest() {
         step("Проверяем, что на главной странице есть нужный текст", () -> {
-            Assertions.assertTrue(mainText.equals($("p.chakra-text.css-853lye").getOwnText()),
+            Assertions.assertTrue(mainText.equals(testPage.getMainText().getOwnText()),
                     "Ошибка: неверный текст на главной странице");
         });
     }
