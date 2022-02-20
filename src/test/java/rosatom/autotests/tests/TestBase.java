@@ -9,10 +9,13 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import rosatom.autotests.config.CredentialConfig;
 import rosatom.autotests.helpers.Attaches;
+import rosatom.autotests.pages.MainPage;
 
 import static java.lang.String.format;
 
 public class TestBase {
+    public MainPage testPage = new MainPage();
+
     @BeforeAll
     static void setup() {
         CredentialConfig credentials =
@@ -22,13 +25,11 @@ public class TestBase {
 
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         Configuration.startMaximized = true;
-        Configuration.remote = format("https://%s:%s@%s",login,password,System.getProperty("testUrl"));
-        //Configuration.remote = "http://65.108.161.82:4444/wd/hub";
-//        Configuration.remote = System.getProperty("testUrl");
+        //Configuration.remote = format("https://%s:%s@%s",login,password,System.getProperty("testUrl"));
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("enableVNC", true);
-        capabilities.setCapability("enableVideo", true);
+//        capabilities.setCapability("enableVNC", true);
+//        capabilities.setCapability("enableVideo", true);
 
         Configuration.browserCapabilities = capabilities;
     }
