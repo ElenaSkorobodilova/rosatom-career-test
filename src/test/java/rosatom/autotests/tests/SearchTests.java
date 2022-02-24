@@ -5,26 +5,22 @@ import static io.qameta.allure.Allure.step;
 
 @DisplayName("Поиск на странице rosatom-career.ru")
 public class SearchTests extends TestBase {
-    @BeforeEach
-    public void openCheckPage() {
-        step(String.format("Открываем страницу %s", testPage.gerUrl()), () -> {
-            testPage.openPage();
-        });
-    }
-
     private final String searchVacancy = "инженер";
     private final String titleText = "Вакансии";
+
+    @BeforeEach
+    public void openCheckPage() {
+        step(String.format("Открываем страницу %s", urlForTest), () -> {
+            testPage.openPage(urlForTest);
+        });
+    }
 
     @Test
     @Tag("UITests")
     @DisplayName("Поиск конкретной вакансии")
     void vacancySearchTest() {
         step(String.format("Вводим в строке поиска вакансию '%s'", searchVacancy), () -> {
-            testPage.getTopElement().scrollIntoView(true);
-            testPage.getSearchElementsArea().click();
-            testPage.getSearchInputField().click();
-            testPage.getSearchInputField().sendKeys(searchVacancy);
-            testPage.getFindButton().click();
+            testPage.openAndInputSearchText(searchVacancy);
         });
 
         step(String.format("Проверяем, что открылась страница '%s'", titleText), () -> {

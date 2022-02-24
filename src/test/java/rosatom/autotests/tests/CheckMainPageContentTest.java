@@ -1,23 +1,25 @@
 package rosatom.autotests.tests;
 
 import org.junit.jupiter.api.*;
+
+import static com.codeborne.selenide.Condition.text;
 import static io.qameta.allure.Allure.step;
 
 @DisplayName("Тесты на проверку содержимого главной страницы сайта rosatom-career.ru")
 public class CheckMainPageContentTest extends TestBase {
-    @BeforeEach
-    public void openCheckPage() {
-        step(String.format("Открываем страницу %s", testPage.gerUrl()), () -> {
-            testPage.openPage();
-        });
-    }
-
     private final String youngText = "Молодым специалистам";
     private final String headerText = "Вакансии\nМолодым специалистам\nНаправления бизнеса\nВойти";
     private final String mainText = "Всё начинается \n с атома, а Росатом \n начинается с людей";
     private final String subMenu1 = "Возможности Росатома";
     private final String subMenu2 = "Мероприятия";
     private final String subMenu3 = "Образование";
+
+    @BeforeEach
+    public void openCheckPage() {
+        step(String.format("Открываем страницу %s", urlForTest), () -> {
+            testPage.openPage(urlForTest);
+        });
+    }
 
     @Test
     @Tag("UITests")
@@ -29,8 +31,9 @@ public class CheckMainPageContentTest extends TestBase {
         });
 
         step("Проверяем, что header страницы содержит необходимые подзаголовки", () -> {
-            Assertions.assertTrue(headerText.equals(testPage.getHeaderSubs().getText()),
-                    "Ошибка: в header нет ожидаемых пунктов меню");
+            testPage.getHeaderSubs().shouldHave(
+                    text(headerText)
+                            .because("Ошибка: в header нет ожидаемых пунктов меню"));
         });
     }
 

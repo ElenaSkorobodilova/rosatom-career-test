@@ -9,8 +9,6 @@ import static org.openqa.selenium.By.linkText;
 
 public class MainPage {
     // locators & elements
-    private final String urlForTests = "https://rosatom-career.ru/";
-    private String key;
     private SelenideElement
     headerSubs = $("div.css-9bz79c"),
     mainText = $("p.chakra-text.css-853lye"),
@@ -22,13 +20,17 @@ public class MainPage {
 
 
     // actions
-    public String gerUrl() {
-        return this.urlForTests;
-    }
-
-    public MainPage openPage() {
+    public MainPage openPage(String urlForTests) {
         open(urlForTests);
         return this;
+    }
+
+    public void openAndInputSearchText(String searchVacancy) {
+        getTopElement().scrollIntoView(true);
+        getSearchElementsArea().click();
+        getSearchInputField().click();
+        getSearchInputField().sendKeys(searchVacancy);
+        getFindButton().click();
     }
 
     public SelenideElement selectElementByName(String elemName) {

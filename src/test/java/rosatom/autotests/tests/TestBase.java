@@ -15,6 +15,7 @@ import static java.lang.String.format;
 
 public class TestBase {
     public MainPage testPage = new MainPage();
+    public static String urlForTest;
 
     @BeforeAll
     static void setup() {
@@ -22,6 +23,7 @@ public class TestBase {
                 ConfigFactory.create(CredentialConfig.class);
         String login = credentials.login();
         String password = credentials.password();
+        urlForTest = credentials.getUrl();
 
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         Configuration.startMaximized = true;

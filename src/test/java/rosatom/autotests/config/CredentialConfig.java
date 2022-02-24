@@ -10,4 +10,6 @@ import org.aeonbits.owner.Config;
 public interface CredentialConfig extends Config {
     String login();
     String password();
+    @Key("url")
+    String getUrl();
 }
